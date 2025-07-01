@@ -7,7 +7,9 @@ const TodoForm = ({ addTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!value || !category) return;
+    if (!value.trim || !category) return;
+
+      addTodo(value, category);
       setValue("");
       setCategory("");
     

@@ -1,25 +1,24 @@
 body {
   font-family: arial;
   background-color: #f4f4f4;
-  padding: 30px;
   color: #333;
   background-image: url(img/city-night.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
   margin: 0;
+  padding: 30px;
 }
 
 .app {
   width: 600px;
   margin: auto;
   background-color: lightgray;
-  padding: 20px 30px;
+  padding:30px;
   border-radius: 10px;
 }
 h1 {
-  text-align: 10px;
+  text-align: center;
 }
 h2 {
     margin-bottom: 10px;
@@ -39,6 +38,7 @@ button{
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
+  margin-right: 10px;
 }
 button:hover {
     opacity: 1;
@@ -58,4 +58,38 @@ input, select {
 }
 .remove {
   background-color: #d9534f;
+}
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+.todo {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.filter, .search {
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.filter-options div {
+  flex: 1 1 0;
 }
